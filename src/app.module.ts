@@ -1,11 +1,9 @@
-import { Controller, Get } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
 
-@Controller()
-export class AppController {
-  @Get()
-  getRoot(): string {
-    return '🚀 API PipeFácil está no ar!';
-  }
-}
-
-
+@Module({
+  imports: [],
+  controllers: [AppController],
+  providers: [],
+})
+export class AppModule {}
