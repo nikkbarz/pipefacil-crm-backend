@@ -7,8 +7,20 @@ export class LeadController {
 
   @Post()
   async createLead(
-    @Body() body: { nome: string; email: string; telefone: string; origem: string },
+    @Body()
+    body: {
+      nome: string;
+      email: string;
+      telefone: string;
+      origem: string;
+      tipoImovel: string;
+      bairro: string;
+      cidade: string;
+      faixaValor: string;
+      mensagem?: string;
+    },
   ) {
     return this.leadService.createLead(body);
   }
 }
+
