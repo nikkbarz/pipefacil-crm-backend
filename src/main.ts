@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors();
 
   // Railway define a porta via variável de ambiente PORT
-  const port = process.env.PORT || 3000;
+  const port = parseInt(process.env.PORT, 10) || 8080;
   await app.listen(port);
 
   console.log(`🚀 Server is running on http://localhost:${port}`);
