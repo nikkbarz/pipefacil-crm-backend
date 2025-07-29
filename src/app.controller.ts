@@ -3,8 +3,7 @@ import { Controller, Get } from '@nestjs/common';
 @Controller()
 export class AppController {
   @Get()
-  getHello(): string {
-    return 'API funcionando!';
+  getRoot(): string {
+    return '🚀 API PipeFácil está no ar!';
   }
 }
-
