@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class AppController {
   @Get()
   getHello(): string {
-    return '🚀 PipeFácil CRM Backend está vivo e funcional!';
+    return 'API funcionando com sucesso!';
   }
 }
